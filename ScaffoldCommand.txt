@@ -1,0 +1,1 @@
+dotnet ef dbcontext scaffold "Server=localhost;Database=Relevantz.lxp;Uid=root;Pwd=Password@12345;" Pomelo.EntityFrameworkCore.MySql -o ..\LXP.Common\Entities -c LXPDbContext --force --context-dir ..\LXP.Data\DBContexts

@@ -1,0 +1,77 @@
+dotnet new sln --name Relevantz.LXP
+dotnet new webapi --use-controllers -o Relevantz.LXP.Api
+dotnet new classlib -o Relevantz.LXP.Core
+dotnet new classlib -o Relevantz.LXP.Data
+dotnet new classlib -o Relevantz.Common
+dotnet new nunit -o Relevantz.LXP.Api.Tests
+dotnet new nunit -o Relevantz.LXP.Core.Tests
+dotnet new nunit -o Relevantz.LXP.Common.Tests
+dotnet new nunit -o Relevantz.LXP.data.Tests
+
+
+Cd Relevantz.LXP.Core
+mkdir IService
+mkdir Service
+
+
+
+cd Relevantz.LXP.data
+mkdir IRepository
+mkdir Repository
+
+
+cd Relevantz.LXP.Common
+
+mkdir Enums
+mkdir Validators
+mkdir ViewModels
+
+referencing  Relevantz.LXP.Api  to Relevantz.LXP.Api.Tests 
+
+             dotnet add reference ../Relevantz.LXP.Api/Relevantz.LXP.Api.csproj
+referencing Relevantz.LXP.Data to  Relevantz.LXP.Data.Tests 
+
+             dotnet add reference ../Relevantz.LXP.Data/Relevantz.LXP.Data.csproj
+             
+referencing Relevantz.LXP.Core  to Relevantz.LXP.Core.Tests 
+
+             dotnet add reference ../Relevantz.LXP.Core/Relevantz.LXP.Core.csproj
+
+referencing  Relevantz.LXP.Common to Relevantz.LXP.Common.Tests 
+ 
+            dotnet add reference ../Relevantz.LXP.Common/Relevantz.LXP.Common.csproj
+
+
+
+
+referencing Relevantz.LXP.Core to Relevantz.LXP.Api
+
+           dotnet add reference ../Relevantz.LXP.Core/Relevantz.LXP.Core.csproj
+
+referencing Relevantz.LXP.Data to Relevantz.LXP.Core
+
+            dotnet add reference ../Relevantz.LXP.Core/Relevantz.LXP.Core.csproj
+        
+referencing Relevantz.LXP.Common to Relevantz.LXP.Data
+
+            dotnet add reference ../Relevantz.LXP.Common/Relevantz.LXP.Common.csproj
+
+
+
+Adding everything to Solution
+
+
+dotnet sln Relevantz.LXP.sln add pathtothecsproj/Relevantz.LXP.Api/Relevantz.LXP.Api.csproj
+dotnet sln Relevantz.LXP.sln add pathtothecsproj/Relevantz.LXP.Common/Relevantz.LXP.Common.csproj
+dotnet sln Relevantz.LXP.sln add pathtothecsproj/Relevantz.LXP.Core/Relevantz.LXP.Core.csproj
+dotnet sln Relevantz.LXP.sln add pathtothecsproj/Relevantz.LXP.Data/Relevantz.LXP.Data.csproj
+dotnet sln Relevantz.LXP.sln add pathtothecsproj/Relevantz.LXP.Api.Tests/Relevantz.LXP.Api.Tests.csproj
+dotnet sln Relevantz.LXP.sln add pathtothecsproj/Relevantz.LXP.Common.Tests/Relevantz.LXP.Common.Tests.csproj
+dotnet sln Relevantz.LXP.sln add pathtothecsproj/Relevantz.LXP.Core.Tests/Relevantz.LXP.Data.Testscsproj
+dotnet sln Relevantz.LXP.sln add pathtothecsproj/Relevantz.LXP.Data.Tests/Relevantz.LXP.Data.Tests.csproj
+
+
+
+
+
+
