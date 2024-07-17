@@ -2,7 +2,7 @@ dotnet new sln --name Relevantz.LXP
 dotnet new webapi --use-controllers -o Relevantz.LXP.Api
 dotnet new classlib -o Relevantz.LXP.Core
 dotnet new classlib -o Relevantz.LXP.Data
-dotnet new classlib -o Relevantz.Common
+dotnet new classlib -o Relevantz.LXP.Common
 dotnet new nunit -o Relevantz.LXP.Api.Tests
 dotnet new nunit -o Relevantz.LXP.Core.Tests
 dotnet new nunit -o Relevantz.LXP.Common.Tests
@@ -29,6 +29,7 @@ mkdir ViewModels
 referencing  Relevantz.LXP.Api  to Relevantz.LXP.Api.Tests 
 
              dotnet add reference ../Relevantz.LXP.Api/Relevantz.LXP.Api.csproj
+
 referencing Relevantz.LXP.Data to  Relevantz.LXP.Data.Tests 
 
              dotnet add reference ../Relevantz.LXP.Data/Relevantz.LXP.Data.csproj
