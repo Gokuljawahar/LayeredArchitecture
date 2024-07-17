@@ -57,13 +57,19 @@ Cd Relevantz.LXP.Common.Tests
 
 referencing Relevantz.LXP.Core to Relevantz.LXP.Api
 
+cd Relevantz.LXP.Api 
+
            dotnet add reference ../Relevantz.LXP.Core/Relevantz.LXP.Core.csproj
 
 referencing Relevantz.LXP.Data to Relevantz.LXP.Core
 
+cd Relevantz.LXP.Core
+
             dotnet add reference ../Relevantz.LXP.Core/Relevantz.LXP.Core.csproj
         
 referencing Relevantz.LXP.Common to Relevantz.LXP.Data
+
+cd Relevantz.LXP.Data
 
             dotnet add reference ../Relevantz.LXP.Common/Relevantz.LXP.Common.csproj
 
@@ -78,7 +84,7 @@ dotnet sln Relevantz.LXP.sln add pathtothecsproj/Relevantz.LXP.Core/Relevantz.LX
 dotnet sln Relevantz.LXP.sln add pathtothecsproj/Relevantz.LXP.Data/Relevantz.LXP.Data.csproj
 dotnet sln Relevantz.LXP.sln add pathtothecsproj/Relevantz.LXP.Api.Tests/Relevantz.LXP.Api.Tests.csproj
 dotnet sln Relevantz.LXP.sln add pathtothecsproj/Relevantz.LXP.Common.Tests/Relevantz.LXP.Common.Tests.csproj
-dotnet sln Relevantz.LXP.sln add pathtothecsproj/Relevantz.LXP.Core.Tests/Relevantz.LXP.Data.Testscsproj
+dotnet sln Relevantz.LXP.sln add pathtothecsproj/Relevantz.LXP.Core.Tests/Relevantz.LXP.Data.Tests.csproj
 dotnet sln Relevantz.LXP.sln add pathtothecsproj/Relevantz.LXP.Data.Tests/Relevantz.LXP.Data.Tests.csproj
 
 
