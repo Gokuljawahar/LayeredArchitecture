@@ -28,17 +28,27 @@ mkdir ViewModels
 
 referencing  Relevantz.LXP.Api  to Relevantz.LXP.Api.Tests 
 
+Cd Relevantz.LXP.Api.Tests 
+
              dotnet add reference ../Relevantz.LXP.Api/Relevantz.LXP.Api.csproj
 
-referencing Relevantz.LXP.Data to  Relevantz.LXP.Data.Tests 
+referencing Relevantz.LXP.Data to  Relevantz.LXP.Data.Tests
+
+
+Cd Relevantz.LXP.Data.Tests 
 
              dotnet add reference ../Relevantz.LXP.Data/Relevantz.LXP.Data.csproj
              
 referencing Relevantz.LXP.Core  to Relevantz.LXP.Core.Tests 
 
+
+Cd Relevantz.LXP.Core.Tests 
+
              dotnet add reference ../Relevantz.LXP.Core/Relevantz.LXP.Core.csproj
 
 referencing  Relevantz.LXP.Common to Relevantz.LXP.Common.Tests 
+
+Cd Relevantz.LXP.Common.Tests 
  
             dotnet add reference ../Relevantz.LXP.Common/Relevantz.LXP.Common.csproj
 
