@@ -25,6 +25,7 @@ cd Relevantz.LXP.Common
 mkdir Enums
 mkdir Validators
 mkdir ViewModels
+mkdir Utils
 
 referencing  Relevantz.LXP.Api  to Relevantz.LXP.Api.Tests 
 
